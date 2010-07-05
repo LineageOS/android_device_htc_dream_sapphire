@@ -22,6 +22,7 @@
 # against the traditional rules of inheritance).
 USE_CAMERA_STUB := true
 
+# inherit from the proprietary version
 -include vendor/htc/dream_sapphire/BoardConfigVendor.mk
 
 TARGET_BOARD_PLATFORM := msm7k

@@ -18,9 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-# proprietary side of the device
-$(call inherit-product-if-exists, vendor/htc/dream_sapphire/device_dream_sapphire-vendor.mk)
-
 DEVICE_PACKAGE_OVERLAYS := device/htc/dream_sapphire/overlay
 
 PRODUCT_PACKAGES := \
@@ -65,6 +62,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # media configuration xml file
 PRODUCT_COPY_FILES += \
     device/htc/dream_sapphire/media_profiles.xml:/system/etc/media_profiles.xml
+
+## (2) Also get non-open-source aspects if available
+$(call inherit-product-if-exists, vendor/htc/dream_sapphire/dream_sapphire-vendor.mk)
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
