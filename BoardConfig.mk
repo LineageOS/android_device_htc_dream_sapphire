@@ -64,8 +64,8 @@ BOARD_EGL_CFG := device/htc/dream_sapphire/egl.cfg
 # Use libcamera2
 BOARD_USES_OLD_CAMERA_HACK := true
 
-# No fallback font by default (space savings)
-NO_FALLBACK_FONT:=true
+# No authoring clock for OpenCore on DS
+BOARD_NO_PV_AUTHORING_CLOCK := true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
