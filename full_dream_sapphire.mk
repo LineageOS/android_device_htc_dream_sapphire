@@ -15,6 +15,13 @@
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Kernel Targets
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifeq ($(TARGET_KERNEL_CONFIG),)
+TARGET_PREBUILT_KERNEL := device/htc/dream_sapphire/kernel
+endif # TARGET_KERNEL_CONFIG
+endif # TARGET_PREBUILT_KERNEL
+
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
