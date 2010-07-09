@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \\
     vendor/htc/__DEVICE__/proprietary/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \\
     vendor/htc/__DEVICE__/proprietary/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
 
-ifdef WITH_DS_HTCACOUSTIC_HACK
+ifndef WITH_DS_HTCACOUSTIC_HACK
 PRODUCT_COPY_FILES += \\
     vendor/htc/__DEVICE__/proprietary/AudioPara4.csv:system/etc/AudioPara4.csv
 endif
