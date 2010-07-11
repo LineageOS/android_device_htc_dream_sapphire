@@ -25,6 +25,20 @@
          to avoid going into software rendering. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+    <!-- Flag indicating whether the surface flinger is inefficient
+         at performing a blur.  Used by parts of the UI to turn off
+         the blur effect where it isn't worth the performance hit. -->
+    <bool name="config_sf_slowBlur">true</bool>
+
+    <!-- The duration (in milliseconds) of a short animation. -->
+    <integer name="config_shortAnimTime">100</integer>
+
+    <!-- The duration (in milliseconds) of a medium-length animation. -->
+    <integer name="config_mediumAnimTime">250</integer>
+
+    <!-- The duration (in milliseconds) of a long animation. -->
+    <integer name="config_longAnimTime">350</integer>
+
     <!-- Component name of the service providing network location support. -->
     <string name="config_networkLocationProvider">com.google.android.location.NetworkLocationProvider</string>
 
