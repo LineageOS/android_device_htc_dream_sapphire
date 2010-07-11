@@ -27,7 +27,8 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/htc/dream_sapphire/overlay
 
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
+    VoiceDialer \
     sensors.msm7k
 
 # Install the features available on this device.
@@ -40,6 +41,11 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml
 
 PRODUCT_PROPERTY_OVERRIDES := \
+    keyguard.no_require_sim=true \
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.com.android.dataroaming=true \
+    ro.ril.hsxpa=1 \
+    ro.ril.gprsclass=10 \
     ro.media.dec.jpeg.memcap=10000000
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -76,7 +82,7 @@ $(call inherit-product-if-exists, vendor/htc/dream_sapphire/dream_sapphire-vendo
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_dream_sapphire
