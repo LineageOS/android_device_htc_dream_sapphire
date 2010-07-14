@@ -68,6 +68,8 @@ BOARD_USES_OLD_CAMERA_HACK := true
 # No authoring clock for OpenCore on DS
 BOARD_NO_PV_AUTHORING_CLOCK := true
 
+BOARD_USES_QCOM_LIBS := true
+
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
 TARGET_BOOTLOADER_BOARD_NAME := sapphire
