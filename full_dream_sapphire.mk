@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=true \
     ro.ril.hsxpa=1 \
     ro.ril.gprsclass=10 \
     ro.media.dec.jpeg.memcap=10000000
