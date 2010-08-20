@@ -52,6 +52,8 @@ on boot
     write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 40000
     write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold 85
 
+    write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,4096,9216,10240,10240
+
 # compass/accelerometer daemon
 service akmd /system/bin/akmd
     user compass
