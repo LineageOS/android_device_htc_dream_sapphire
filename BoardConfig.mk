@@ -90,3 +90,4 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x05a00000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x127c0000
 
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_sapphire librecovery_ui_htc
+TARGET_PREBUILT_KERNEL := device/htc/dream_sapphire/kernel
