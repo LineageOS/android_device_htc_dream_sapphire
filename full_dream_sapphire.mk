@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \
-    ro.ril.hsxpa=1 \
+    ro.ril.hsxpa=2 \
     ro.ril.gprsclass=10 \
     ro.media.dec.jpeg.memcap=10000000
 

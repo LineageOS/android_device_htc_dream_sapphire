@@ -63,12 +63,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # OpenGL drivers config file path
 BOARD_EGL_CFG := device/htc/dream_sapphire/egl.cfg
 
-# Use libcamera2
-BOARD_USES_OLD_CAMERA_HACK := true
-
-# No authoring clock for OpenCore on DS
-BOARD_NO_PV_AUTHORING_CLOCK := true
-
 BOARD_USES_QCOM_LIBS := true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
