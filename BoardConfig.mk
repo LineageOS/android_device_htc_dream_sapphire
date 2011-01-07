@@ -65,6 +65,8 @@ BOARD_EGL_CFG := device/htc/dream_sapphire/egl.cfg
 
 BOARD_USES_QCOM_LIBS := true
 
+BOARD_USE_FROYO_LIBCAMERA := true
+
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
 TARGET_BOOTLOADER_BOARD_NAME := sapphire
