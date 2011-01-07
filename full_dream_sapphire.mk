@@ -31,6 +31,8 @@ PRODUCT_PACKAGES += \
 	trout-keypad-qwertz.kcm \
 	wlan.ko \
 	vold.fstab \
+	wlan_loader \
+	tiwlan.ini \
 	libOmxCore
 	
 
