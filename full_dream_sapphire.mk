@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
 	trout-keypad-v3.kcm \
 	trout-keypad-qwertz.kcm \
 	wlan.ko \
-	vold.fstab 
+	vold.fstab \
+	libOmxCore
 	
 
 # Install the features available on this device.
