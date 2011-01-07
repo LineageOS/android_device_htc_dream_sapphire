@@ -22,7 +22,16 @@ DEVICE_PACKAGE_OVERLAYS := device/htc/dream_sapphire/overlay
 
 PRODUCT_PACKAGES += \
     VoiceDialer \
-    sensors.msm7k
+    sensors.trout \
+    sensors.sapphire \
+	sapphire-keypad.kcm \
+	trout-keypad.kcm \
+	trout-keypad-v2.kcm \
+	trout-keypad-v3.kcm \
+	trout-keypad-qwertz.kcm \
+	wlan.ko \
+	vold.fstab 
+	
 
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \

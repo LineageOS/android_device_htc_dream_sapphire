@@ -22,6 +22,8 @@ LOCAL_ARM_MODE := arm
 
 LOCAL_SRC_FILES := board.c panel.c keypad.c usb.c
 
+LOCAL_MODULE_TAGS := optional
+
 LOCAL_C_INCLUDES := $(call include-path-for, bootloader)
 
 LOCAL_CFLAGS := -O2 -g -W -Wall
