@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
@@ -104,4 +104,5 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_dream_sapphire
 PRODUCT_DEVICE := dream_sapphire
+PRODUCT_BRAND := Android
 PRODUCT_MODEL := Full Android on Dream/Sapphire
