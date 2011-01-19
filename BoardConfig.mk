@@ -41,14 +41,6 @@ WIFI_DRIVER_MODULE_ARG      := ""
 WIFI_DRIVER_MODULE_NAME     := "wlan"
 WIFI_FIRMWARE_LOADER        := "wlan_loader"
 
-TARGET_BOOTLOADER_LIBS := \
-	libboot_board_dream_sapphire_combined \
-	libboot_arch_msm7k \
-	libboot_arch_armv6
-
-TARGET_BOOTLOADER_LINK_SCRIPT := \
-	hardware/msm7k/boot/boot.ld
-
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 
 BOARD_HAVE_BLUETOOTH := true
