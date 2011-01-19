@@ -31,7 +31,6 @@ TARGET_ARCH_VARIANT := armv6j
 
 TARGET_NO_BOOTLOADER := true
 
-
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := CUSTOM
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := libWifiApi
@@ -41,6 +40,7 @@ WIFI_DRIVER_MODULE_ARG      := ""
 WIFI_DRIVER_MODULE_NAME     := "wlan"
 WIFI_FIRMWARE_LOADER        := "wlan_loader"
 
+BOARD_KERNEL_BASE := 0x02000000
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 
 BOARD_HAVE_BLUETOOTH := true
