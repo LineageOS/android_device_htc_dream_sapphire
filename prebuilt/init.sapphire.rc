@@ -12,14 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-on early-init
-    device mtd@misc 0460 radio diag
-
-# Set timeout value for rmnet stats.
-    write /sys/devices/virtual/net/rmnet0/timeout_suspend 5000000
-    write /sys/devices/virtual/net/rmnet0/timeout 18000000
-
 on boot
+    mount debugfs /sys/kernel/debug /sys/kernel/debug
+
 # unmap left alt to avoid console switch
     setkey 0x0 0x38 0x0
 # reset SEND+MENU+END
@@ -86,8 +81,8 @@ service hciattach /system/bin/hciattach \
     group bluetooth net_bt_admin
     disabled
 
-# bugreport is triggered by the KEY_LEFTSHIFT and KEY_MENU keycodes
+# bugreport is triggered by the KEY_BACK and KEY_MENU keycodes
 service bugreport /system/bin/dumpstate -d -v -o /sdcard/bugreports/bugreport
     disabled
     oneshot
-    keycodes 42 139
+    keycodes 158 139
