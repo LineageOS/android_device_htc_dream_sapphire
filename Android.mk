@@ -13,4 +13,4 @@
 # limitations under the License.
 
 
-include $(call all-named-subdir-makefiles, boot libsensors)
+include $(call all-named-subdir-makefiles, boot libsensors keychars)
