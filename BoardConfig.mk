@@ -45,6 +45,9 @@ WIFI_FIRMWARE_LOADER        := "wlan_loader"
 BOARD_KERNEL_BASE := 0x02000000
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 
+#libsurfaceflinger to avoid Draw Texture Extenstion
+AVOID_DRAW_TEXTURE_EXTENSION := true
+
 BOARD_HAVE_BLUETOOTH := true
 
 BOARD_VENDOR_USE_AKMD := akm8976
